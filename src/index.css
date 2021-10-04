@@ -2,8 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding: 5rem calc((100vw - 1300px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(140, 83, 131);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(140, 83, 131, 1) 0%,
+    rgba(74, 88, 153, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(140, 83, 131, 1) 0%,
+    rgba(74, 88, 153, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(140, 83, 131, 1) 0%,
+    rgba(74, 88, 153, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c5383",endColorstr="#4a5899",GradientType=1);
 }

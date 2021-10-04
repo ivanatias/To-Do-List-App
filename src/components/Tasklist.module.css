@@ -1,0 +1,86 @@
+.tasksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Task {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  border-radius: 10px;
+  text-align: left;
+  font-size: clamp(0.9rem, 1.2vw, 2rem);
+}
+
+.Task:nth-child(n + 3) {
+  background: #8d5385;
+}
+
+.Task:nth-child(2n + 2) {
+  background: #5a9eaf;
+}
+
+.Task:nth-child(3n + 1) {
+  background: #495697;
+}
+
+.Task header {
+  max-width: 600px;
+}
+
+.Task p {
+  line-height: 1.5;
+  font-size: clamp(0.8rem, 1vw, 1.8rem);
+  max-width: 500px;
+}
+
+.TaskInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.TaskDone {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.8rem, 1.2vw, 2rem);
+  padding: 0.3rem 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+@media (hover: hover) {
+  .buttons button:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+  }
+}

@@ -1,0 +1,23 @@
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.todo-app h1 {
+  color: #fff;
+  font-size: clamp(1.3rem, 3.2vw, 5rem);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .todo-app {
+    padding: 0.5rem 1rem;
+  }
+}
