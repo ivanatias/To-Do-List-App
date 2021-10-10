@@ -21,12 +21,12 @@ const Tasklist = ({ tasksList, setTasksList }) => {
 
   return (
     <div className={styles.tasksContainer}>
-      {tasksList.map((task, index) => (
+      {tasksList.map((task) => (
         <div
           className={
             task.done ? `${styles.Task} ${styles.TaskDone}` : `${styles.Task}`
           }
-          key={index}
+          key={task.id}
         >
           <div className={styles.TaskInfo}>
             <header>{task.title}</header>
